@@ -1,0 +1,5 @@
+| Lib Greatest port to RISC OS
+| ported by Paolo Fabio Zaino 2021
+IconSprites <Obey$Dir>.!Sprites
+Set LibGreatest$Dir <Obey$Dir>
+Set LibGreatest$Path <LibGreatest$Dir>.

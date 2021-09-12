@@ -1,0 +1,41 @@
+GreaTest !Help File
+~~~~~~~~~~
+
+This is GreaTest release 1.0.0 for RISC OS. It's a port of GreaTest library latest (main branch 7 Sep 2021). Greatest is an header only library, so not much work needed, practically just repackaging it.
+
+This RISC OS port was done by Paolo Fabio Zaino.
+
+For examples of how to use this Library please have a look into !LibGreatest.Examples
+
+- Library structure -
+This cirectory has the following structure:
+
+!LibGreatest
+  |
+  +---!Boot
+  +---!Help (this help file)
+  +---!Run
+  +---!Sprites
+  +---a (here you'll find the GCC static linkable lib file, if one is avcailable)
+  +---docs (this directory contains documentation, when available)
+  +---Examples (this directory contains example source code to see how to use the lib)
+  +---h (this directory contains the c header files for the lib)
+  +---o (this directory contains the DDE static linkable lib file, when available)
+  \---so (this directory contains the dynamic linkable lib file, when available)
+
+- GCC -
+LibGreatest is an header only lib, so no special needs!
+
+If you compile using a single gcc line:
+gcc blah blah -ILibGreatest:
+
+If you compile using multiple gcc lines:
+gcc blah blah -c -o $@.o myapp.c -ILibGreatest:
+gcc blah blah -o myapp ./myapp.o blah blah
+
+- DDE -
+
+
+
+Enjoy and thanks!
+- Paolo
